@@ -1,0 +1,26 @@
+char* hackerrankInString(char* s) {
+    
+    char * key = "hackerrank" ;
+    char * answer = "NO";
+    int keySize = strlen(key);
+    int size = strlen(s);
+    int k = 0 ;
+    
+   ////// hereiamstackerrank
+    
+    for (int i = 0 ; i < size ; i++ )
+    {
+        if (s[i] == key[k])
+        {
+            k++ ;
+            
+        }
+        if (k == keySize-1 )
+        { answer = "YES" ;
+            break ;}
+        
+    }
+
+    return answer ;
+
+}
